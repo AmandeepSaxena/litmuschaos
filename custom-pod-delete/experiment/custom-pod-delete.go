@@ -18,7 +18,7 @@ import (
 )
 
 // PodDelete inject the pod-delete chaos
-func PodDelete(clients clients.ClientSets) {
+func Experiment(clients clients.ClientSets) {
 
 	experimentsDetails := experimentTypes.ExperimentDetails{}
 	resultDetails := types.ResultDetails{}
