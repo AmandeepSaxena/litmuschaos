@@ -1,0 +1,16 @@
+apiVersion: litmuchaos.io/v1alpha1
+kind: ChartServiceVersion
+metadata:
+  name: kubernetes
+  version: 0.1.0
+  annotations:
+    categories: Kubernetes
+    chartDescription: Injects kubernetes chaos experiment
+spec:
+  displayName: Kubernetes Chaos
+  categoryDescription: >
+    Kubernetes is an open-source system for automating deployment, scaling, and management of containerized applications. It groups containers that make up an application into logical units for easier management and discovery. It will install all the experiments which can be used to inject chaos into containerized applications.
+  faults:
+    - name: custom-pod-delete
+      description: It injects pod-delete chaos in a Kubernetes pod.
+      displayName: CUSTOM POD DELETE
