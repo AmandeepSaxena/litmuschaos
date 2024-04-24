@@ -1,0 +1,6 @@
+---
+packageName: kubernetes
+faults:
+  - name: custom-pod-delete
+    CSV: custom-pod-delete.chartserviceversion.yaml
+    desc: "custom-pod-delete"
